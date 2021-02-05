@@ -1,0 +1,11 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: jaeger-operator-catalog
+  namespace: openshift-marketplace
+spec:
+  sourceType: grpc
+  image: brew.registry.redhat.io/rh-osbs/iib:19018
+  displayName: Jaeger Operator Catalog
+  publisher: grpc
+
