@@ -1,0 +1,11 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: servicemesh-operator-catalog
+  namespace: openshift-marketplace
+spec:
+  sourceType: grpc
+  image: brew.registry.redhat.io/rh-osbs/iib:42235
+  displayName: Servicemesh Operator Catalog
+  publisher: grpc
+
