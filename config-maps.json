@@ -1,0 +1,114 @@
+{
+  "config_dump": {
+    "configs": [
+      {
+        "@type": "type.googleapis.com/envoy.admin.v3.BootstrapConfigDump",
+        "bootstrap": {
+          "admin": {
+            "access_log_path": "/dev/null",
+            "address": {
+              "socket_address": {
+                "address": "127.0.0.1",
+                "port_value": 15000
+              }
+            },
+            "profile_path": "/var/lib/istio/data/envoy.prof"
+          },
+          "dynamic_resources": {
+            "ads_config": {
+              "api_type": "GRPC",
+              "grpc_services": [
+                {
+                  "envoy_grpc": {
+                    "cluster_name": "xds-grpc"
+                  }
+                }
+              ],
+              "set_node_on_first_message_only": true,
+              "transport_api_version": "V3"
+            },
+            "cds_config": {
+              "ads": {},
+              "resource_api_version": "V3"
+            },
+            "lds_config": {
+              "ads": {},
+              "resource_api_version": "V3"
+            }
+          },
+          "layered_runtime": {
+            "layers": [
+              {
+                "name": "deprecation",
+                "static_layer": {
+                  "envoy.deprecated_features:envoy.config.listener.v3.Listener.hidden_envoy_deprecated_use_original_dst": true,
+                  "envoy.reloadable_features.strict_1xx_and_204_response_headers": false,
+                  "re2.max_program_size.error_level": 1024
+                }
+              },
+              {
+                "name": "global config",
+                "static_layer": {
+                  "overload.global_downstream_max_connections": 2147483647
+                }
+              },
+              {
+                "admin_layer": {},
+                "name": "admin"
+              }
+            ]
+          },
+          "node": {
+            "cluster": "productpage.bookinfo",
+            "extensions": [
+              {
+                "category": "envoy.grpc_credentials",
+                "name": "envoy.grpc_credentials.aws_iam"
+              },
+              {
+                "category": "envoy.grpc_credentials",
+                "name": "envoy.grpc_credentials.default"
+              },
+              {
+                "category": "envoy.grpc_credentials",
+                "name": "envoy.grpc_credentials.file_based_metadata"
+              },
+              {
+                "category": "envoy.internal_redirect_predicates",
+                "name": "envoy.internal_redirect_predicates.allow_listed_routes"
+              },
+              {
+                "category": "envoy.internal_redirect_predicates",
+                "name": "envoy.internal_redirect_predicates.previous_routes"
+              },
+              {
+                "category": "envoy.internal_redirect_predicates",
+                "name": "envoy.internal_redirect_predicates.safe_cross_scheme"
+              },
+              {
+                "category": "envoy.resource_monitors",
+                "name": "envoy.resource_monitors.fixed_heap"
+              },
+              {
+                "category": "envoy.resource_monitors",
+                "name": "envoy.resource_monitors.injected_resource"
+              },
+              {
+                "category": "envoy.filters.listener",
+                "name": "envoy.filters.listener.http_inspector"
+              },
+              {
+                "category": "envoy.filters.listener",
+                "name": "envoy.filters.listener.original_dst"
+              },
+              {
+                "category": "envoy.filters.listener",
+                "name": "envoy.filters.listener.original_src"
+              },
+              {
+                "category": "envoy.filters.listener",
+                "name": "envoy.filters.listener.proxy_protocol"
+              },
+              {
+                "category": "envoy.filters.listener",
+                "name": "envoy.filters.liste

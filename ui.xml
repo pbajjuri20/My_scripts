@@ -1,0 +1,246 @@
+<?xml version="1.0"?>
+<testsuites>
+<testsuite errors="0" failures="0" name="pytest" skips="0" tests="5" time="881.230">
+  <testcase classname="kiali_qe.tests.test_istio_objects_crud" file="kiali_qe/tests/test_istio_objects_crud.py" line="65" name="test_destination_rule" time="310.52001953125"/>
+  <testcase classname="kiali_qe.tests.test_istio_objects_crud" file="kiali_qe/tests/test_istio_objects_crud.py" line="89" name="test_destination_rule_broken" time="263.3496963977814"/>
+  <testcase classname="kiali_qe.tests.test_istio_objects_crud" file="kiali_qe/tests/test_istio_objects_crud.py" line="114" name="test_destination_rule_svc_warning" time="111.49949193000793"/>
+  <testcase classname="kiali_qe.tests.test_istio_objects_crud" file="kiali_qe/tests/test_istio_objects_crud.py" line="141" name="test_destination_rule_host_warning" time="100.100590467453"/>
+  <testcase classname="kiali_qe.tests.test_istio_objects_crud" file="kiali_qe/tests/test_istio_objects_crud.py" line="586" name="test_service_entry" time="82.20528292655945"/>
+</testsuite>
+<testsuite errors="0" failures="0" name="pytest" skips="5" tests="10" time="493.126">
+  <testcase classname="kiali_qe.tests.test_3scale_config_page" file="kiali_qe/tests/test_3scale_config_page.py" line="26" name="test_all_handlers" time="0.0014836788177490234">
+    <skipped message="unconditional skip" type="pytest.skip">kiali_qe/tests/test_3scale_config_page.py:26: &lt;py._xmlgen.raw object at 0x7fb0d05b2630&gt;</skipped>
+  </testcase>
+  <testcase classname="kiali_qe.tests.test_3scale_config_page" file="kiali_qe/tests/test_3scale_config_page.py" line="41" name="test_handler_details" time="0.0010852813720703125">
+    <skipped message="unconditional skip" type="pytest.skip">kiali_qe/tests/test_3scale_config_page.py:41: &lt;py._xmlgen.raw object at 0x7fb0d05b3128&gt;</skipped>
+  </testcase>
+  <testcase classname="kiali_qe.tests.test_3scale_config_page" file="kiali_qe/tests/test_3scale_config_page.py" line="51" name="test_handler_create" time="0.0010313987731933594">
+    <skipped message="unconditional skip" type="pytest.skip">kiali_qe/tests/test_3scale_config_page.py:51: &lt;py._xmlgen.raw object at 0x7fb0d06c12b0&gt;</skipped>
+  </testcase>
+  <testcase classname="kiali_qe.tests.test_3scale_config_page" file="kiali_qe/tests/test_3scale_config_page.py" line="61" name="test_handler_delete" time="0.001016855239868164">
+    <skipped message="unconditional skip" type="pytest.skip">kiali_qe/tests/test_3scale_config_page.py:61: &lt;py._xmlgen.raw object at 0x7fb0d06c19e8&gt;</skipped>
+  </testcase>
+  <testcase classname="kiali_qe.tests.test_3scale_config_page" file="kiali_qe/tests/test_3scale_config_page.py" line="72" name="test_rule_instance_create" time="0.001041412353515625">
+    <skipped message="unconditional skip" type="pytest.skip">kiali_qe/tests/test_3scale_config_page.py:72: &lt;py._xmlgen.raw object at 0x7fb0d06c1be0&gt;</skipped>
+  </testcase>
+  <testcase classname="kiali_qe.tests.test_istio_objects_crud" file="kiali_qe/tests/test_istio_objects_crud.py" line="166" name="test_virtual_service" time="172.93282794952393"/>
+  <testcase classname="kiali_qe.tests.test_istio_objects_crud" file="kiali_qe/tests/test_istio_objects_crud.py" line="205" name="test_virtual_service_svc_warning" time="66.53159832954407"/>
+  <testcase classname="kiali_qe.tests.test_istio_objects_crud" file="kiali_qe/tests/test_istio_objects_crud.py" line="243" name="test_virtual_service_subset_warning" time="39.78953242301941"/>
+  <testcase classname="kiali_qe.tests.test_istio_objects_crud" file="kiali_qe/tests/test_istio_objects_crud.py" line="272" name="test_virtual_service_broken" time="197.01071000099182"/>
+  <testcase classname="kiali_qe.tests.test_istio_objects_crud" file="kiali_qe/tests/test_istio_objects_crud.py" line="301" name="test_virtual_service_broken_weight" time="2.8611340522766113"/>
+</testsuite>
+<testsuite errors="0" failures="0" name="pytest" skips="0" tests="15" time="1434.778">
+  <testcase classname="kiali_qe.tests.test_istio_objects_crud" file="kiali_qe/tests/test_istio_objects_crud.py" line="322" name="test_virtual_service_broken_weight_text" time="69.337557554245"/>
+  <testcase classname="kiali_qe.tests.test_istio_objects_crud" file="kiali_qe/tests/test_istio_objects_crud.py" line="355" name="test_quota_spec" time="110.9408700466156"/>
+  <testcase classname="kiali_qe.tests.test_istio_objects_crud" file="kiali_qe/tests/test_istio_objects_crud.py" line="377" name="test_quota_spec_binding" time="107.51172304153442"/>
+  <testcase classname="kiali_qe.tests.test_istio_objects_crud" file="kiali_qe/tests/test_istio_objects_crud.py" line="399" name="test_gateway" time="118.731529712677"/>
+  <testcase classname="kiali_qe.tests.test_istio_objects_crud" file="kiali_qe/tests/test_istio_objects_crud.py" line="422" name="test_gateway_create" time="131.50243282318115"/>
+  <testcase classname="kiali_qe.tests.test_istio_objects_crud" file="kiali_qe/tests/test_istio_objects_crud.py" line="437" name="test_sidecar_create" time="94.93583488464355"/>
+  <testcase classname="kiali_qe.tests.test_istio_objects_crud" file="kiali_qe/tests/test_istio_objects_crud.py" line="453" name="test_authpolicy_deny_all_create" time="80.60797929763794"/>
+  <testcase classname="kiali_qe.tests.test_istio_objects_crud" file="kiali_qe/tests/test_istio_objects_crud.py" line="470" name="test_authpolicy_allow_all_create" time="79.38906860351562"/>
+  <testcase classname="kiali_qe.tests.test_istio_objects_crud" file="kiali_qe/tests/test_istio_objects_crud.py" line="487" name="test_authpolicy_rules_allow_create" time="79.2636775970459"/>
+  <testcase classname="kiali_qe.tests.test_istio_objects_crud" file="kiali_qe/tests/test_istio_objects_crud.py" line="505" name="test_authpolicy_rules_deny_disabled" time="23.76671004295349"/>
+  <testcase classname="kiali_qe.tests.test_istio_objects_crud" file="kiali_qe/tests/test_istio_objects_crud.py" line="519" name="test_peerauth_create" time="79.7826476097107"/>
+  <testcase classname="kiali_qe.tests.test_istio_objects_crud" file="kiali_qe/tests/test_istio_objects_crud.py" line="536" name="test_peerauth_create_disabled" time="25.07295322418213"/>
+  <testcase classname="kiali_qe.tests.test_istio_objects_crud" file="kiali_qe/tests/test_istio_objects_crud.py" line="553" name="test_requestauth_create" time="78.25805687904358"/>
+  <testcase classname="kiali_qe.tests.test_istio_objects_crud" file="kiali_qe/tests/test_istio_objects_crud.py" line="571" name="test_requestauth_create_disabled" time="25.40656876564026"/>
+  <testcase classname="kiali_qe.tests.test_routing_wizard" file="kiali_qe/tests/test_routing_wizard.py" line="24" name="test_weighted_routing_single" time="309.4415271282196"/>
+</testsuite>
+<testsuite errors="0" failures="0" name="pytest" skips="0" tests="10" time="565.463">
+  <testcase classname="kiali_qe.tests.test_dr_hosts" file="kiali_qe/tests/test_dr_hosts.py" line="22" name="test_destination_rule_host_1" time="101.35050773620605"/>
+  <testcase classname="kiali_qe.tests.test_dr_hosts" file="kiali_qe/tests/test_dr_hosts.py" line="37" name="test_destination_rule_host_2" time="39.80583596229553"/>
+  <testcase classname="kiali_qe.tests.test_dr_hosts" file="kiali_qe/tests/test_dr_hosts.py" line="52" name="test_destination_rule_host_3" time="34.7144889831543"/>
+  <testcase classname="kiali_qe.tests.test_dr_hosts" file="kiali_qe/tests/test_dr_hosts.py" line="67" name="test_destination_rule_host_4" time="37.25442361831665"/>
+  <testcase classname="kiali_qe.tests.test_dr_hosts" file="kiali_qe/tests/test_dr_hosts.py" line="82" name="test_destination_rule_host_5" time="41.72815442085266"/>
+  <testcase classname="kiali_qe.tests.test_dr_hosts" file="kiali_qe/tests/test_dr_hosts.py" line="97" name="test_destination_rule_host_6" time="36.769253730773926"/>
+  <testcase classname="kiali_qe.tests.test_dr_hosts" file="kiali_qe/tests/test_dr_hosts.py" line="112" name="test_destination_rule_host_7" time="37.8373281955719"/>
+  <testcase classname="kiali_qe.tests.test_dr_hosts" file="kiali_qe/tests/test_dr_hosts.py" line="127" name="test_destination_rule_host_8" time="41.561169385910034"/>
+  <testcase classname="kiali_qe.tests.test_dr_hosts" file="kiali_qe/tests/test_dr_hosts.py" line="142" name="test_destination_rule_host_9" time="37.88009715080261"/>
+  <testcase classname="kiali_qe.tests.test_istio_objects_crud" file="kiali_qe/tests/test_istio_objects_crud.py" line="608" name="test_auth_policy" time="127.91929030418396"/>
+</testsuite>
+<testsuite errors="0" failures="0" name="pytest" skips="2" tests="3" time="584.717">
+  <testcase classname="kiali_qe.tests.test_routing_wizard" file="kiali_qe/tests/test_routing_wizard.py" line="139" name="test_tls_mutual" time="569.1416590213776"/>
+  <testcase classname="kiali_qe.tests.test_routing_wizard" file="kiali_qe/tests/test_routing_wizard.py" line="167" name="test_3scale_rule" time="1.8510100841522217">
+    <skipped message="unconditional skip" type="pytest.skip">kiali_qe/tests/test_routing_wizard.py:167: &lt;py._xmlgen.raw object at 0x7fce9009f4a8&gt;</skipped>
+  </testcase>
+  <testcase classname="kiali_qe.tests.test_routing_wizard" file="kiali_qe/tests/test_routing_wizard.py" line="187" name="test_3scale_link_auto_delete" time="2.475973129272461">
+    <skipped message="unconditional skip" type="pytest.skip">kiali_qe/tests/test_routing_wizard.py:187: &lt;py._xmlgen.raw object at 0x7fce9008dc18&gt;</skipped>
+  </testcase>
+</testsuite>
+<testsuite errors="0" failures="0" name="pytest" skips="0" tests="3" time="1093.832">
+  <testcase classname="kiali_qe.tests.test_routing_wizard" file="kiali_qe/tests/test_routing_wizard.py" line="45" name="test_routing_keep_advanced_settings" time="425.5283179283142"/>
+  <testcase classname="kiali_qe.tests.test_routing_wizard" file="kiali_qe/tests/test_routing_wizard.py" line="97" name="test_matching_routing_multi" time="357.58845949172974"/>
+  <testcase classname="kiali_qe.tests.test_routing_wizard" file="kiali_qe/tests/test_routing_wizard.py" line="118" name="test_suspend_traffic_multi" time="301.19026947021484"/>
+</testsuite>
+<testsuite errors="0" failures="0" name="pytest" skips="0" tests="52" time="581.177">
+  <testcase classname="kiali_qe.tests.test_istio_config_mtls" file="kiali_qe/tests/test_istio_config_mtls.py" line="50" name="test_scenario1" time="57.75807738304138"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_mtls" file="kiali_qe/tests/test_istio_config_mtls.py" line="82" name="test_scenario2" time="22.193542003631592"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_mtls" file="kiali_qe/tests/test_istio_config_mtls.py" line="118" name="test_scenario3" time="22.248060941696167"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_mtls" file="kiali_qe/tests/test_istio_config_mtls.py" line="154" name="test_scenario4" time="21.909217596054077"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_mtls" file="kiali_qe/tests/test_istio_config_mtls.py" line="190" name="test_scenario5" time="19.93847918510437"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_mtls" file="kiali_qe/tests/test_istio_config_mtls.py" line="219" name="test_scenario6" time="21.0620219707489"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_mtls" file="kiali_qe/tests/test_istio_config_mtls.py" line="254" name="test_scenario7" time="20.944945812225342"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_mtls" file="kiali_qe/tests/test_istio_config_mtls.py" line="286" name="test_scenario8" time="7.537820339202881"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_mtls" file="kiali_qe/tests/test_istio_config_mtls.py" line="310" name="test_scenario9" time="4.277283668518066"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_mtls" file="kiali_qe/tests/test_istio_config_mtls.py" line="329" name="test_scenario10" time="4.9430341720581055"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_mtls" file="kiali_qe/tests/test_istio_config_mtls.py" line="349" name="test_scenario11" time="5.069517374038696"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_mtls" file="kiali_qe/tests/test_istio_config_mtls.py" line="369" name="test_scenario12" time="4.882758140563965"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_mtls" file="kiali_qe/tests/test_istio_config_mtls.py" line="389" name="test_scenario13" time="7.457428216934204"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_mtls" file="kiali_qe/tests/test_istio_config_mtls.py" line="412" name="test_scenario14" time="3.8829615116119385"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_mtls" file="kiali_qe/tests/test_istio_config_mtls.py" line="430" name="test_scenario15" time="5.236655950546265"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_mtls" file="kiali_qe/tests/test_istio_config_mtls.py" line="454" name="test_scenario16" time="19.184697151184082"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_mtls" file="kiali_qe/tests/test_istio_config_mtls.py" line="480" name="test_scenario17" time="20.6961088180542"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_mtls" file="kiali_qe/tests/test_istio_config_mtls.py" line="516" name="test_scenario18" time="20.854524850845337"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_mtls" file="kiali_qe/tests/test_istio_config_mtls.py" line="552" name="test_scenario19" time="20.299294233322144"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_mtls" file="kiali_qe/tests/test_istio_config_mtls.py" line="589" name="test_scenario20" time="20.801955938339233"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_mtls" file="kiali_qe/tests/test_istio_config_mtls.py" line="626" name="test_scenario21" time="20.971440076828003"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_mtls" file="kiali_qe/tests/test_istio_config_mtls.py" line="659" name="test_scenario22" time="20.839998245239258"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_mtls" file="kiali_qe/tests/test_istio_config_mtls.py" line="692" name="test_scenario23" time="21.01598620414734"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_mtls" file="kiali_qe/tests/test_istio_config_mtls.py" line="725" name="test_scenario24" time="19.61940097808838"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_validation" file="kiali_qe/tests/test_istio_config_validation.py" line="70" name="test_two_gateways_same_host" time="4.800673484802246"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_validation" file="kiali_qe/tests/test_istio_config_validation.py" line="95" name="test_two_gateways_different_selectors" time="4.692729711532593"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_validation" file="kiali_qe/tests/test_istio_config_validation.py" line="121" name="test_gateway_no_matching_workload" time="3.745147943496704"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_validation" file="kiali_qe/tests/test_istio_config_validation.py" line="140" name="test_more_drs_same_host_port" time="4.9736316204071045"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_validation" file="kiali_qe/tests/test_istio_config_validation.py" line="165" name="test_no_matching_entry_dr" time="4.208709716796875"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_validation" file="kiali_qe/tests/test_istio_config_validation.py" line="188" name="test_subset_label_not_found" time="3.527602195739746"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_validation" file="kiali_qe/tests/test_istio_config_validation.py" line="208" name="test_mesh_policy_not_found" time="3.6170547008514404"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_validation" file="kiali_qe/tests/test_istio_config_validation.py" line="227" name="test_mtls_settings_overridden" time="4.959773302078247"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_validation" file="kiali_qe/tests/test_istio_config_validation.py" line="251" name="test_meshpolicy_permissive_ok" time="4.9428839683532715"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_validation" file="kiali_qe/tests/test_istio_config_validation.py" line="276" name="test_meshpolicy_mtls_enable_ok" time="4.947694301605225"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_validation" file="kiali_qe/tests/test_istio_config_validation.py" line="301" name="test_vs_to_non_existing_gateway" time="4.074740171432495"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_validation" file="kiali_qe/tests/test_istio_config_validation.py" line="320" name="test_vs_not_defined_protocol" time="3.385639190673828"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_validation" file="kiali_qe/tests/test_istio_config_validation.py" line="343" name="test_dr_fqdn_ok" time="4.232633113861084"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_validation" file="kiali_qe/tests/test_istio_config_validation.py" line="362" name="test_dr_fqdn_not_exist" time="3.900590658187866"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_validation" file="kiali_qe/tests/test_istio_config_validation.py" line="384" name="test_deployment_port_not_found" time="4.428958177566528"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_validation" file="kiali_qe/tests/test_istio_config_validation.py" line="400" name="test_port_name_suffix" time="4.931965589523315"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_validation" file="kiali_qe/tests/test_istio_config_validation.py" line="416" name="test_vs_less_than_100_weight" time="3.8293261528015137"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_validation" file="kiali_qe/tests/test_istio_config_validation.py" line="435" name="test_sidecar_errors" time="3.826627731323242"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_validation" file="kiali_qe/tests/test_istio_config_validation.py" line="456" name="test_duplicate_sidecar_errors" time="4.306486368179321"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_validation" file="kiali_qe/tests/test_istio_config_validation.py" line="480" name="test_duplicate_workload_sidecar_errors" time="5.136728525161743"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_validation" file="kiali_qe/tests/test_istio_config_validation.py" line="504" name="test_default_workload_sidecar" time="3.797109603881836"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_validation" file="kiali_qe/tests/test_istio_config_validation.py" line="523" name="test_meshpolicy_disabled_ok" time="4.429078817367554"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_validation" file="kiali_qe/tests/test_istio_config_validation.py" line="548" name="test_authpolicy_validations_mtls" time="3.2371397018432617"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_validation" file="kiali_qe/tests/test_istio_config_validation.py" line="570" name="test_vs_subset_validations_service_entry" time="5.651875972747803"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_validation" file="kiali_qe/tests/test_istio_config_validation.py" line="589" name="test_vs_subset_validations_no_service_entry" time="4.844772577285767"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_validation" file="kiali_qe/tests/test_istio_config_validation.py" line="608" name="test_vs_duplicate_gateway" time="7.330301284790039"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_validation" file="kiali_qe/tests/test_istio_config_validation.py" line="642" name="test_vs_destination_host_not_found" time="4.361347913742065"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_validation" file="kiali_qe/tests/test_istio_config_validation.py" line="662" name="test_request_auth_workload_not_found" time="8.299686670303345"/>
+</testsuite>
+<testsuite errors="0" failures="0" name="pytest" skips="0" tests="4" time="801.839">
+  <testcase classname="kiali_qe.tests.test_applications_page" file="kiali_qe/tests/test_applications_page.py" line="17" name="test_filter_options" time="91.17173600196838"/>
+  <testcase classname="kiali_qe.tests.test_applications_page" file="kiali_qe/tests/test_applications_page.py" line="25" name="test_sort_options" time="7.881842613220215"/>
+  <testcase classname="kiali_qe.tests.test_applications_page" file="kiali_qe/tests/test_applications_page.py" line="75" name="test_all_applications_namespace" time="84.98220419883728"/>
+  <testcase classname="kiali_qe.tests.test_applications_page" file="kiali_qe/tests/test_applications_page.py" line="95" name="test_application_details_random" time="597.5887303352356"/>
+</testsuite>
+<testsuite errors="0" failures="0" name="pytest" skips="0" tests="3" time="705.402">
+  <testcase classname="kiali_qe.tests.test_breadcrumb" file="kiali_qe/tests/test_breadcrumb.py" line="15" name="test_workload_breadcrumb_menu" time="123.62209033966064"/>
+  <testcase classname="kiali_qe.tests.test_breadcrumb" file="kiali_qe/tests/test_breadcrumb.py" line="24" name="test_workload_breadcrumb_namespace" time="45.21640181541443"/>
+  <testcase classname="kiali_qe.tests.test_workloads_page" file="kiali_qe/tests/test_workloads_page.py" line="109" name="test_workload_details_random" time="519.1785016059875"/>
+</testsuite>
+<testsuite errors="0" failures="0" name="pytest" skips="0" tests="10" time="570.649">
+  <testcase classname="kiali_qe.tests.test_breadcrumb" file="kiali_qe/tests/test_breadcrumb.py" line="33" name="test_workload_breadcrumb_object" time="117.5616991519928"/>
+  <testcase classname="kiali_qe.tests.test_breadcrumb" file="kiali_qe/tests/test_breadcrumb.py" line="44" name="test_application_breadcrumb_menu" time="43.090538024902344"/>
+  <testcase classname="kiali_qe.tests.test_breadcrumb" file="kiali_qe/tests/test_breadcrumb.py" line="53" name="test_application_breadcrumb_namespace" time="38.0790011882782"/>
+  <testcase classname="kiali_qe.tests.test_breadcrumb" file="kiali_qe/tests/test_breadcrumb.py" line="62" name="test_application_breadcrumb_object" time="41.49501895904541"/>
+  <testcase classname="kiali_qe.tests.test_breadcrumb" file="kiali_qe/tests/test_breadcrumb.py" line="73" name="test_service_breadcrumb_menu" time="45.53171682357788"/>
+  <testcase classname="kiali_qe.tests.test_breadcrumb" file="kiali_qe/tests/test_breadcrumb.py" line="82" name="test_service_breadcrumb_namespace" time="49.46112871170044"/>
+  <testcase classname="kiali_qe.tests.test_breadcrumb" file="kiali_qe/tests/test_breadcrumb.py" line="91" name="test_service_breadcrumb_object" time="40.52713227272034"/>
+  <testcase classname="kiali_qe.tests.test_breadcrumb" file="kiali_qe/tests/test_breadcrumb.py" line="102" name="test_config_breadcrumb_menu" time="57.564921140670776"/>
+  <testcase classname="kiali_qe.tests.test_breadcrumb" file="kiali_qe/tests/test_breadcrumb.py" line="110" name="test_config_breadcrumb_namespace" time="40.80487847328186"/>
+  <testcase classname="kiali_qe.tests.test_breadcrumb" file="kiali_qe/tests/test_breadcrumb.py" line="119" name="test_config_breadcrumb_object" time="37.144933223724365"/>
+</testsuite>
+<testsuite errors="0" failures="0" name="pytest" skips="0" tests="9" time="924.265">
+  <testcase classname="kiali_qe.tests.test_filters" file="kiali_qe/tests/test_filters.py" line="29" name="test_app_filters_kept" time="182.444482088089"/>
+  <testcase classname="kiali_qe.tests.test_filters" file="kiali_qe/tests/test_filters.py" line="59" name="test_workloads_filters_kept" time="182.27721691131592"/>
+  <testcase classname="kiali_qe.tests.test_filters" file="kiali_qe/tests/test_filters.py" line="92" name="test_services_filters_kept" time="137.63154864311218"/>
+  <testcase classname="kiali_qe.tests.test_graph_page" file="kiali_qe/tests/test_graph_page.py" line="18" name="test_duration" time="48.38925552368164"/>
+  <testcase classname="kiali_qe.tests.test_graph_page" file="kiali_qe/tests/test_graph_page.py" line="32" name="test_refresh_interval" time="52.12460422515869"/>
+  <testcase classname="kiali_qe.tests.test_graph_page" file="kiali_qe/tests/test_graph_page.py" line="46" name="test_type" time="107.5337610244751"/>
+  <testcase classname="kiali_qe.tests.test_graph_page" file="kiali_qe/tests/test_graph_page.py" line="69" name="test_filter" time="149.05595922470093"/>
+  <testcase classname="kiali_qe.tests.test_graph_page" file="kiali_qe/tests/test_graph_page.py" line="99" name="test_find_hide" time="21.401265859603882"/>
+  <testcase classname="kiali_qe.tests.test_graph_page" file="kiali_qe/tests/test_graph_page.py" line="134" name="test_layout" time="8.622461795806885"/>
+</testsuite>
+<testsuite errors="0" failures="0" name="pytest" skips="0" tests="7" time="501.041">
+  <testcase classname="kiali_qe.tests.test_istio_config_page" file="kiali_qe/tests/test_istio_config_page.py" line="8" name="test_namespaces" time="86.66221857070923"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_page" file="kiali_qe/tests/test_istio_config_page.py" line="16" name="test_filter_options" time="10.829081058502197"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_page" file="kiali_qe/tests/test_istio_config_page.py" line="24" name="test_sort_options" time="8.133081674575806"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_page" file="kiali_qe/tests/test_istio_config_page.py" line="32" name="test_filter_feature_random" time="126.98366975784302"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_page" file="kiali_qe/tests/test_istio_config_page.py" line="48" name="test_configs_filter_2_names" time="35.61388158798218"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_page" file="kiali_qe/tests/test_istio_config_page.py" line="58" name="test_all_configs_namespace" time="56.448418855667114"/>
+  <testcase classname="kiali_qe.tests.test_istio_config_page" file="kiali_qe/tests/test_istio_config_page.py" line="67" name="test_config_details_random" time="137.08194541931152"/>
+</testsuite>
+<testsuite errors="0" failures="0" name="pytest" skips="2" tests="13" time="650.792">
+  <testcase classname="kiali_qe.tests.test_applications_page" file="kiali_qe/tests/test_applications_page.py" line="9" name="test_namespaces" time="88.39227747917175"/>
+  <testcase classname="kiali_qe.tests.test_applications_page" file="kiali_qe/tests/test_applications_page.py" line="35" name="test_all_applications" time="98.92846870422363"/>
+  <testcase classname="kiali_qe.tests.test_applications_page" file="kiali_qe/tests/test_applications_page.py" line="43" name="test_apps_filter_2_names" time="37.818302154541016"/>
+  <testcase classname="kiali_qe.tests.test_applications_page" file="kiali_qe/tests/test_applications_page.py" line="53" name="test_filter_applications_by_or_label" time="84.44424486160278"/>
+  <testcase classname="kiali_qe.tests.test_applications_page" file="kiali_qe/tests/test_applications_page.py" line="64" name="test_filter_applications_by_and_label" time="83.17670106887817"/>
+  <testcase classname="kiali_qe.tests.test_applications_page" file="kiali_qe/tests/test_applications_page.py" line="84" name="test_application_graph_overview" time="76.44911861419678"/>
+  <testcase classname="kiali_qe.tests.test_login" file="kiali_qe/tests/test_login.py" line="7" name="test_login" time="6.557436466217041">
+    <skipped message="does not run on oauth" type="pytest.skip">kiali_qe/tests/test_login.py:7: &lt;py._xmlgen.raw object at 0x7f55700bb400&gt;</skipped>
+  </testcase>
+  <testcase classname="kiali_qe.tests.test_login" file="kiali_qe/tests/test_login.py" line="23" name="test_invalid_login" time="4.611508369445801">
+    <skipped message="does not run on oauth" type="pytest.skip">kiali_qe/tests/test_login.py:23: &lt;py._xmlgen.raw object at 0x7f55700bb1d0&gt;</skipped>
+  </testcase>
+  <testcase classname="kiali_qe.tests.test_menu" file="kiali_qe/tests/test_menu.py" line="8" name="test_menu" time="25.806277990341187"/>
+  <testcase classname="kiali_qe.tests.test_menu" file="kiali_qe/tests/test_menu.py" line="42" name="test_toggle" time="13.510385990142822"/>
+  <testcase classname="kiali_qe.tests.test_menu" file="kiali_qe/tests/test_menu.py" line="53" name="test_help_menu" time="22.99889063835144"/>
+  <testcase classname="kiali_qe.tests.test_menu" file="kiali_qe/tests/test_menu.py" line="65" name="test_user_menu" time="25.398327112197876"/>
+  <testcase classname="kiali_qe.tests.test_services_page" file="kiali_qe/tests/test_services_page.py" line="9" name="test_namespaces" time="11.839372634887695"/>
+</testsuite>
+<testsuite errors="0" failures="1" name="pytest" skips="1" tests="16" time="1141.712">
+  <testcase classname="kiali_qe.tests.test_distributed_tracing_page" file="kiali_qe/tests/test_distributed_tracing_page.py" line="7" name="test_search_traces" time="0.0008170604705810547">
+    <skipped message="https://issues.jboss.org/browse/OSSM-91" type="pytest.skip">kiali_qe/tests/test_distributed_tracing_page.py:7: &lt;py._xmlgen.raw object at 0x7f6b4ccddf98&gt;</skipped>
+  </testcase>
+  <testcase classname="kiali_qe.tests.test_istio_config_page" file="kiali_qe/tests/test_istio_config_page.py" line="40" name="test_all_configs" time="154.46122288703918"/>
+  <testcase classname="kiali_qe.tests.test_overview_page" file="kiali_qe/tests/test_overview_page.py" line="13" name="test_filter_options" time="13.740212202072144"/>
+  <testcase classname="kiali_qe.tests.test_overview_page" file="kiali_qe/tests/test_overview_page.py" line="21" name="test_sort_options" time="46.04110407829285"/>
+  <testcase classname="kiali_qe.tests.test_overview_page" file="kiali_qe/tests/test_overview_page.py" line="29" name="test_type_options" time="42.66697692871094"/>
+  <testcase classname="kiali_qe.tests.test_overview_page" file="kiali_qe/tests/test_overview_page.py" line="39" name="test_all_app_compact_overviews" time="122.89583444595337"/>
+  <testcase classname="kiali_qe.tests.test_overview_page" file="kiali_qe/tests/test_overview_page.py" line="49" name="test_all_services_compact_overviews" time="99.71974349021912"/>
+  <testcase classname="kiali_qe.tests.test_overview_page" file="kiali_qe/tests/test_overview_page.py" line="58" name="test_all_workloads_compact_overviews" time="105.47500395774841"/>
+  <testcase classname="kiali_qe.tests.test_overview_page" file="kiali_qe/tests/test_overview_page.py" line="68" name="test_all_app_expand_overviews" time="87.87608790397644"/>
+  <testcase classname="kiali_qe.tests.test_overview_page" file="kiali_qe/tests/test_overview_page.py" line="78" name="test_all_services_expand_overviews" time="77.0913679599762"/>
+  <testcase classname="kiali_qe.tests.test_overview_page" file="kiali_qe/tests/test_overview_page.py" line="87" name="test_all_workloads_expand_overviews" time="70.88424396514893"/>
+  <testcase classname="kiali_qe.tests.test_overview_page" file="kiali_qe/tests/test_overview_page.py" line="97" name="test_all_app_list_overviews" time="55.1191885471344"/>
+  <testcase classname="kiali_qe.tests.test_overview_page" file="kiali_qe/tests/test_overview_page.py" line="107" name="test_all_services_list_overviews" time="37.179540157318115"/>
+  <testcase classname="kiali_qe.tests.test_overview_page" file="kiali_qe/tests/test_overview_page.py" line="116" name="test_all_workloads_list_overviews" time="40.05886173248291"/>
+  <testcase classname="kiali_qe.tests.test_overview_page" file="kiali_qe/tests/test_overview_page.py" line="126" name="test_filter_overviews_by_label" time="47.83259963989258"/>
+  <testcase classname="kiali_qe.tests.test_overview_page" file="kiali_qe/tests/test_overview_page.py" line="137" name="test_overview_auto_injection" time="86.30186367034912">
+  </testcase>
+</testsuite>
+<testsuite errors="0" failures="1" name="pytest" skips="0" tests="11" time="850.237">
+  <testcase classname="kiali_qe.tests.test_services_page" file="kiali_qe/tests/test_services_page.py" line="17" name="test_filter_options" time="85.07205486297607"/>
+  <testcase classname="kiali_qe.tests.test_services_page" file="kiali_qe/tests/test_services_page.py" line="25" name="test_sort_options" time="7.939944267272949"/>
+  <testcase classname="kiali_qe.tests.test_services_page" file="kiali_qe/tests/test_services_page.py" line="35" name="test_filter_feature_random" time="166.97735905647278"/>
+  <testcase classname="kiali_qe.tests.test_services_page" file="kiali_qe/tests/test_services_page.py" line="45" name="test_all_services" time="115.36716532707214">
+  </testcase>
+  <testcase classname="kiali_qe.tests.test_services_page" file="kiali_qe/tests/test_services_page.py" line="53" name="test_services_filter_2_names" time="38.41237711906433"/>
+  <testcase classname="kiali_qe.tests.test_services_page" file="kiali_qe/tests/test_services_page.py" line="63" name="test_filter_service_by_label" time="62.182448863983154"/>
+  <testcase classname="kiali_qe.tests.test_services_page" file="kiali_qe/tests/test_services_page.py" line="72" name="test_filter_service_by_or_label" time="82.36827373504639"/>
+  <testcase classname="kiali_qe.tests.test_services_page" file="kiali_qe/tests/test_services_page.py" line="83" name="test_filter_service_by_and_label" time="81.92493510246277"/>
+  <testcase classname="kiali_qe.tests.test_services_page" file="kiali_qe/tests/test_services_page.py" line="94" name="test_all_services_namespace" time="67.77546191215515"/>
+  <testcase classname="kiali_qe.tests.test_services_page" file="kiali_qe/tests/test_services_page.py" line="102" name="test_service_details_kiali" time="45.69163203239441"/>
+  <testcase classname="kiali_qe.tests.test_services_page" file="kiali_qe/tests/test_services_page.py" line="110" name="test_service_graph_overview" time="47.30150127410889"/>
+</testsuite>
+<testsuite errors="0" failures="0" name="pytest" skips="0" tests="11" time="777.054">
+  <testcase classname="kiali_qe.tests.test_filters" file="kiali_qe/tests/test_filters.py" line="122" name="test_config_filters_kept" time="182.89336776733398"/>
+  <testcase classname="kiali_qe.tests.test_navbar" file="kiali_qe/tests/test_navbar.py" line="15" name="test_about" time="48.47999382019043"/>
+  <testcase classname="kiali_qe.tests.test_navbar" file="kiali_qe/tests/test_navbar.py" line="77" name="test_help_menu" time="40.99536108970642"/>
+  <testcase classname="kiali_qe.tests.test_navbar" file="kiali_qe/tests/test_navbar.py" line="90" name="test_masthead_status" time="11.693381547927856"/>
+  <testcase classname="kiali_qe.tests.test_workloads_page" file="kiali_qe/tests/test_workloads_page.py" line="14" name="test_namespaces" time="12.616215705871582"/>
+  <testcase classname="kiali_qe.tests.test_workloads_page" file="kiali_qe/tests/test_workloads_page.py" line="22" name="test_filter_options" time="17.908993005752563"/>
+  <testcase classname="kiali_qe.tests.test_workloads_page" file="kiali_qe/tests/test_workloads_page.py" line="30" name="test_sort_options" time="13.255083084106445"/>
+  <testcase classname="kiali_qe.tests.test_workloads_page" file="kiali_qe/tests/test_workloads_page.py" line="40" name="test_all_workloads" time="145.7454493045807"/>
+  <testcase classname="kiali_qe.tests.test_workloads_page" file="kiali_qe/tests/test_workloads_page.py" line="48" name="test_workloads_filter_2_names" time="48.66577887535095"/>
+  <testcase classname="kiali_qe.tests.test_workloads_page" file="kiali_qe/tests/test_workloads_page.py" line="58" name="test_filter_workloads_by_or_label" time="106.12625074386597"/>
+  <testcase classname="kiali_qe.tests.test_workloads_page" file="kiali_qe/tests/test_workloads_page.py" line="69" name="test_filter_workloads_by_and_label" time="81.58204340934753"/>
+</testsuite>
+<testsuite errors="0" failures="0" name="pytest" skips="0" tests="5" time="1059.508">
+  <testcase classname="kiali_qe.tests.test_services_page" file="kiali_qe/tests/test_services_page.py" line="120" name="test_service_details_random" time="504.4346663951874"/>
+  <testcase classname="kiali_qe.tests.test_workloads_page" file="kiali_qe/tests/test_workloads_page.py" line="80" name="test_all_workloads_namespace" time="98.6654920578003"/>
+  <testcase classname="kiali_qe.tests.test_workloads_page" file="kiali_qe/tests/test_workloads_page.py" line="88" name="test_workload_details_kiali" time="99.50153350830078"/>
+  <testcase classname="kiali_qe.tests.test_workloads_page" file="kiali_qe/tests/test_workloads_page.py" line="98" name="test_workload_graph_overview" time="65.74821972846985"/>
+  <testcase classname="kiali_qe.tests.test_workloads_page" file="kiali_qe/tests/test_workloads_page.py" line="118" name="test_workload_auto_injection" time="269.4420335292816"/>
+</testsuite>
+</testsuites>

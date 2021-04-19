@@ -1,0 +1,47 @@
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: ServiceEntry
+metadata:
+  name: external-service-foo-se
+spec:
+  hosts:
+  - foo.bookinfo.ext # this is an arbitrary string; only used in VS
+  location: MESH_EXTERNAL
+  ports:
+  - number: 9080
+    name: http-ext
+    protocol: HTTP
+  resolution: STATIC
+  endpoints:
+  - address: 192.168.0.15 # IMPORTANT! Change this IP address to your own host IP address
+    ports:
+      http-ext: 9080
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: external-service-foo-vs
+spec:
+  hosts:
+    - ratings
+  http:
+  - route:
+    - destination:
+        host: ratings
+        subset: external-service-foo-dr-subset-v1
+      weight: 0
+    - destination:
+        host: foo.bookinfo.ext
+      weight: 100
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: external-service-foo-dr
+spec:
+  host: ratings
+  subsets:
+  - name: external-service-foo-dr-subset-v1
+    labels:
+      version: v1
+

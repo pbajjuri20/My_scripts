@@ -1,0 +1,9 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: servicemesh-manifests
+  namespace: openshift-marketplace
+spec:
+  sourceType: grpc
+  image: "quay.io/maistra/servicemesh-olm-cs:latest-2.0-qe"
+

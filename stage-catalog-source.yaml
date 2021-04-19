@@ -1,0 +1,12 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: stage-manifests
+  namespace: openshift-marketplace
+spec:
+  sourceType: grpc
+  image: "brew.registry.redhat.io/rh-osbs/iib-pub-pending:v4.7"
+  updateStrategy:
+    registryPoll:
+      interval: "30m"
+

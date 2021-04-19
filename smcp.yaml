@@ -1,0 +1,114 @@
+apiVersion: maistra.io/v2
+kind: ServiceMeshControlPlane
+metadata:
+  name: basic-install
+spec:
+  proxy:
+    resources:
+      requests:
+        cpu: 100m
+        memory: 128Mi
+      limits:
+        cpu: 500m
+        memory: 128Mi
+gateways:
+    ingress: # _the_ istio-ingressgateway
+      service:
+        type: ClusterIP
+        ports:
+        - name: status-port
+          port: 15020
+        - name: http2
+          port: 80
+          targetPort: 8080
+        - name: https
+          port: 443
+          targetPort: 8443
+      meshExpansionPorts: []
+    egress: # _the_ istio-egressgateway
+      service:
+        type: ClusterIP
+        ports:
+        - name: status-port
+          port: 15020
+        - name: http2
+          port: 80
+          targetPort: 8080
+        - name: https
+          port: 443
+          targetPort: 8443
+    additionalIngress:
+      some-other-ingress-gateway: {}
+    additionalEgress:
+      some-other-egress-gateway: {}
+  policy:
+    mixer:
+      enableChecks: false # default
+      failOpen: false # default
+      runtime:
+        container:
+          image: mixer # default mixer image
+          resources: {} # mixer resources
+    telemetry:
+    type: <istiod_#or_Mixer_or_Remote>
+    mixer: # legacy v1
+      sessionAffinity: false
+      batching:
+        maxEntries: 100
+        maxTime: 1s
+      adapters:
+        useAdapterCRDs: false
+        kubernetesenv: true
+        stdio:
+          outputAsJSON: false
+        prometheus:
+          metricsExpiryDuration: 10m
+        stackdriver: null
+  runtime:
+    pilot:
+      deployment:
+        replicas: 2
+      pod:
+        affinity: {}
+      container:
+        resources:
+          limits: {}
+          requirements: {}
+  addons:
+    visualization:
+      grafana:
+        address: some-grafana-url
+        install:
+          selfManaged: true
+          config:
+            env: {}
+            envSecrets: {}
+          persistence:
+            storageClassName: ""
+            accessMode: ReadWriteOnce
+            capacity: 5Gi
+          service:
+            ingress:
+              contextPath: /grafana
+              tls:
+                termination: reencrypt
+          runtime:
+            deployment: {}
+            pod: {}
+      kiali:
+        name: kiali
+        install: # install kiali CR if not present
+          config:
+            dashboard:
+              viewOnly: false
+              enableGrafana: true
+              enableTracing: true
+              enablePrometheus: true
+          service:
+            ingress:
+              contextPath: /kiali
+          runtime:
+            deployment: {}
+            pod: {}
+----
+

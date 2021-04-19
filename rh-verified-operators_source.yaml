@@ -1,0 +1,12 @@
+apiVersion: operators.coreos.com
+kind: OperatorSource
+metadata:
+  name: rh-verified-operators
+  namespace: openshift-marketplace
+spec:
+  type: appregistry
+  endpoint: https://quay.io/cnr
+  registryNamespace: rh-verified-operators
+  authorizationToken:
+    secretName: rh-verified-operators-secret
+
