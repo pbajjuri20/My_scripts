@@ -1,0 +1,19 @@
+kind: Gateway
+apiVersion: networking.istio.io/v1alpha3
+metadata:
+  name: flames-gateway2
+  namespace: bookinfo
+spec:
+  servers:
+    - hosts:
+        - api.dev.example.com
+        - api-dev.example.com
+      port:
+        name: https-443
+        number: 443
+        protocol: HTTPS
+      tls:
+        credentialName: example-com-cert
+        mode: SIMPLE
+  selector:
+    istio: ingressgateway
