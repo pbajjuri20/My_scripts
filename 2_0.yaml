@@ -6,4 +6,5 @@ metadata:
 spec:
   sourceType: grpc
   image: "quay.io/maistra/servicemesh-olm-cs:latest-2.0-qe"
+  test: "123"
 
